@@ -1,0 +1,194 @@
+span.timeframe:before{
+	content: " (";
+}
+span.timeframe:after{
+	content: ") ";
+}
+span.title:after, span.company:after, .skills ul li:after{
+	content:", ";
+}
+
+.skills ul li:last-child:after{
+	content: ".";
+}
+
+.skills ul li:last-child:before{
+	content: "and ";
+}
+
+.skills ul li:only-child:after{
+	content: "";
+}
+
+.skills ul li:only-child:before{
+	content: "";
+}
+
+.skills ul li{
+	display:inline;
+}
+
+#skills ul li input {
+	float: left;
+	margin-right: 10px;
+}
+
+h1 {
+	margin:30px 0 0;
+}
+
+h1 small{
+	display:block;
+}
+
+.vcard img, .vcard .email{
+	display:block;
+}
+
+.contact-info {
+	width:200px;
+	float:left;
+	margin-left:40px;
+}
+.bio {
+	width:720px;
+	float:left;
+}
+
+section.education {
+	float:right;
+	text-align:right;
+}
+
+
+@media screen{
+
+	body {
+		background: url(../images/leather.jpg);
+	}
+
+
+	.container {
+		margin: 2em auto;
+		position: relative;
+		padding: 1em;
+		background: white;
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+
+	.container::before, .container::after {
+	content: "";
+	position: absolute;
+	z-index: -2;
+	}
+	
+	.container::before {
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	-moz-border-radius: 10px / 100px;
+	border-radius: 10px / 100px;
+	}
+	
+	header.container{
+		background: whiteSmoke;
+	}
+
+	header img.photo {
+		float:right;
+		padding:10px;
+		margin:-15px 0px 0 0;
+		-moz-transform: rotate(7deg);
+		-webkit-transform: rotate(7deg);
+		z-index:500;
+	}
+
+	header span.paperclip{
+		display:block;
+		position:absolute;
+		height:120px;
+		width:60px;
+		background:transparent url(../images/paperclip.png) no-repeat top center;
+		right: 110px;
+		top: -29px;
+		z-index: 1000;
+	}
+
+	.vcard img, .vcard .email{
+		display:block;
+	}
+
+	.contact-info {
+		width:200px;
+		float:left;
+		margin-left:40px;
+	}
+	.bio {
+		width:720px;
+		float:left;
+	}
+
+	section.education {
+		float:right;
+		text-align:right;
+	}
+
+	#skills {
+		display:none;
+	}
+
+	html.js #experience_container {
+		padding:1em;
+	}
+
+	html.js #skills {
+		display:block;
+		float:left;
+		width:220px;
+		margin-right:20px;
+	}
+
+	html.js #experience {
+		float:left;
+		width:720px;
+
+	}
+
+	.position {
+	    position:relative;
+	    padding:1em; 
+	    margin:2em 10px 2em; 
+	    background:#fff;
+	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+	       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+
+	.position:before,
+	.position:after {
+	    content:"";
+	    position:absolute; 
+	    z-index:-2;
+	}
+}
+
+@media print{
+	header h1{
+		margin-bottom:20px;
+	}
+	#skills {
+		display:none;
+	}
+	span.paperclip,img.photo, .no-print {
+		display:none;
+	}
+	a {
+		text-decoration:none;
+	}
+}
