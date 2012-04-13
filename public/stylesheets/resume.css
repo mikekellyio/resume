@@ -28,9 +28,17 @@ span.title:after, span.company:after, .skills ul li:after{
 	display:inline;
 }
 
+#skills ul {
+	position:relative;
+}
+
+#skills ul li label {
+	margin-left:20px;
+}
+
 #skills ul li input {
-	float: left;
-	margin-right: 10px;
+	position:absolute;
+	left:0px;
 }
 
 h1 {
@@ -60,6 +68,123 @@ section.education {
 	text-align:right;
 }
 
+html.js #skills {
+	display:block;
+	float:left;
+	width:220px;
+	margin-right:20px;
+}
+
+html.js #experience {
+	float:left;
+	width:720px;
+
+}
+
+/* #Layout
+================================================== */
+/* #Base 960 Grid
+================================================== */
+.container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.container .column,
+.container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+.row                                        { margin-bottom: 20px; }
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container                                  { width: 768px; }
+    .container .column,
+    .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+	article.bio { 
+		width: 520px;
+	}
+	html.js #skills {
+		width:140px;
+	}
+	html.js #experience {
+		width:600px;
+	}
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 479px) {
+    .container { width: 300px; }
+    .container .columns,
+    .container .column { margin: 0; }
+
+	img.photo {
+		display:none;
+	}
+	
+	header span.paperclip {
+		display:none;
+	}
+	
+	h1 small{
+		font-size: 60%;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+	
+	.contact-info{
+		margin-left:0;
+	}
+	
+	html.js #skills {
+		display:none;
+	}
+	
+	html.js #experience,
+ 	article.bio { 
+		width: 300px;
+	}
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container { width: 420px; }
+    .container .columns,
+    .container .column { margin: 0; }
+	
+	img.photo {
+		width:120px;
+	}
+	
+	span.paperclip {
+		right:100px;
+	}
+	
+	h1 small{
+		font-size: 60%;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+	
+	.contact-info{
+		margin-left:0;
+	}
+	
+	html.js #skills {
+		display:none;
+	}
+	
+	html.js #experience,
+ 	article.bio { 
+		width: 420px;
+	}
+}
 
 @media screen{
 
@@ -109,7 +234,7 @@ section.education {
 		z-index:500;
 	}
 
-	header span.paperclip{
+	span.paperclip{
 		display:block;
 		position:absolute;
 		height:120px;
@@ -122,16 +247,6 @@ section.education {
 
 	.vcard img, .vcard .email{
 		display:block;
-	}
-
-	.contact-info {
-		width:200px;
-		float:left;
-		margin-left:40px;
-	}
-	.bio {
-		width:720px;
-		float:left;
 	}
 
 	section.education {
@@ -147,18 +262,6 @@ section.education {
 		padding:1em;
 	}
 
-	html.js #skills {
-		display:block;
-		float:left;
-		width:220px;
-		margin-right:20px;
-	}
-
-	html.js #experience {
-		float:left;
-		width:720px;
-
-	}
 
 	.position {
 	    position:relative;
@@ -178,6 +281,7 @@ section.education {
 	}
 }
 
+
 @media print{
 	header h1{
 		margin-bottom:20px;
@@ -192,3 +296,4 @@ section.education {
 		text-decoration:none;
 	}
 }
+
