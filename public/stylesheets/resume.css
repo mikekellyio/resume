@@ -55,6 +55,15 @@ h1 small{
 	display:block;
 }
 
+header img.photo{
+	float:right;
+	padding:10px;
+	margin:-15px 0px 0 0;
+	-moz-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	z-index:500;
+}
+
 .vcard img, .vcard .email{
 	display:block;
 }
@@ -126,19 +135,63 @@ html.js #experience {
     .container { width: 300px; }
     .container .columns,
     .container .column { margin: 0; }
+	
+	html.js #experience,
+ 	article.bio { 
+		width: 300px;
+	}
 
-	img.photo {
-		display:none;
+	header img.photo {
+		float:none;
+		margin:10px auto;
+		padding:10px;
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		z-index:500;
 	}
 	
 	header span.paperclip {
 		display:none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	
+	h1 { 
+		margin: 10px 0;
+		font-size: 32px;
+		line-height:36px;
+		text-align:center;
 	}
 	
 	h1 small{
 		font-size: 60%;
 		line-height: 30px;
 		margin-bottom: 18px;
+	}
+	
+	h2 {
+		font-size:24px;
+		line-height:30px;
+	}
+	
+	h3 {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 8px;
+		text-align: center;
+	}
+	h3 span {
+		display:block;
+	}
+	h3 span.location, h3 span.timeframe {
+		display:inline;
+	}
+	
+	h4 {
+		font-size: 16px;
+		line-height:18px;
 	}
 	
 	.contact-info{
@@ -150,10 +203,7 @@ html.js #experience {
 		display:none;
 	}
 	
-	html.js #experience,
- 	article.bio { 
-		width: 300px;
-	}
+	a#pdf_download { display:none; }
 }
 
 /* #Mobile (Landscape)
@@ -173,26 +223,12 @@ html.js #experience {
 	header span.paperclip {
 		right:100px;
 	}
-	
-	h1 small{
-		font-size: 60%;
-		line-height: 30px;
-		margin-bottom: 18px;
-	}
-	
-	.contact-info{
-		margin-left:0;
-		text-align:left;
-	}
-	
-	html.js #skills {
-		display:none;
-	}
-	
 	html.js #experience,
  	article.bio { 
 		width: 420px;
 	}
+	
+	h1 { text-align:left;}
 }
 
 @media screen{
@@ -235,12 +271,7 @@ html.js #experience {
 	}
 
 	header img.photo {
-		float:right;
-		padding:10px;
-		margin:-15px 0px 0 0;
-		-moz-transform: rotate(7deg);
-		-webkit-transform: rotate(7deg);
-		z-index:500;
+		display:block;
 	}
 
 	span.paperclip{
