@@ -195,13 +195,13 @@ html.js #experience {
 /* Note: Design for a width of 320px */
 
 @media only screen and (max-width: 479px) {
-    .container { width: 300px; }
+    .container { width: 290px; }
     .container .columns,
     .container .column { margin: 0; }
 	
 	html.js #experience,
  	article.bio { 
-		width: 300px;
+		width: 290px;
 	}
 
 	header img.photo {
