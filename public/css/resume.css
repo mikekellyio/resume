@@ -1,0 +1,357 @@
+span.timeframe:before{
+	content: " (";
+}
+span.timeframe:after{
+	content: ") ";
+}
+span.title:after, span.company:after, .skills ul li:after{
+	content:", ";
+}
+
+#pdf_download img{
+	margin: 0 5px;
+	padding:5px;
+	background-color:transparent;
+}
+
+.skills ul li:last-child:after{
+	content: ".";
+}
+
+.skills ul li:last-child:before{
+	content: "and ";
+}
+
+.skills ul li:only-child:after{
+	content: "";
+}
+
+.skills ul li:only-child:before{
+	content: "";
+}
+
+.skills ul li{
+	display:inline;
+}
+
+#skills ul {
+	position:relative;
+}
+
+#skills ul li label {
+	margin-left:20px;
+}
+
+#skills ul li input {
+	position:absolute;
+	left:0px;
+}
+
+h1 {
+	margin:30px 0 10px;
+}
+
+h1 small{
+	display:block;
+}
+
+header img.photo{
+	float:right;
+	padding:10px;
+	margin:-15px 0px 0 0;
+	-moz-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	z-index:500;
+}
+
+.vcard img, .vcard .email{
+	display:block;
+}
+
+.contact-info {
+	width:200px;
+	float:left;
+	margin-left:40px;
+	text-align:right;
+}
+.bio {
+	width:720px;
+	float:left;
+}
+
+section.education {
+	float:right;
+	text-align:right;
+}
+
+html.js #skills {
+	display:block;
+	float:left;
+	width:220px;
+	margin-right:20px;
+}
+
+html.js #experience {
+	float:left;
+	width:720px;
+
+}
+
+/* #Layout
+================================================== */
+/* #Base 960 Grid
+================================================== */
+.container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+.container .column,
+.container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+.row                                        { margin-bottom: 20px; }
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container                                  { width: 768px; }
+    .container .column,
+    .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+	article.bio { 
+		width: 520px;
+	}
+	html.js #skills {
+		width:140px;
+	}
+	html.js #experience {
+		width:600px;
+	}
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 479px) {
+    .container { width: 300px; }
+    .container .columns,
+    .container .column { margin: 0; }
+	
+	html.js #experience,
+ 	article.bio { 
+		width: 300px;
+	}
+
+	header img.photo {
+		float:none;
+		margin:10px auto;
+		padding:10px;
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		z-index:500;
+	}
+	
+	header span.paperclip {
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	
+	h1 { 
+		margin: 10px 0;
+		font-size: 32px;
+		line-height:36px;
+		text-align:center;
+	}
+	
+	h1 small{
+		font-size: 60%;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+	
+	h2 {
+		font-size:24px;
+		line-height:30px;
+	}
+	
+	h3 {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 8px;
+		text-align: center;
+	}
+	h3 span {
+		display:block;
+	}
+	h3 span.location, h3 span.timeframe {
+		display:inline;
+	}
+	
+	h4 {
+		font-size: 16px;
+		line-height:18px;
+	}
+	
+	.contact-info{
+		margin-left:0;
+		text-align:left;
+	}
+	
+	html.js #skills {
+		display:none;
+	}
+	
+	a#pdf_download { display:none; }
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container { width: 420px; }
+    .container .columns,
+    .container .column { margin: 0; }
+	
+	img.photo {
+		width:120px;
+	}
+	
+	header span.paperclip {
+		right:100px;
+	}
+	html.js #experience,
+ 	article.bio { 
+		width: 420px;
+	}
+	
+	h1 { text-align:left;}
+}
+
+@media screen{
+
+	body {
+		background: url(../images/leather.jpg);
+	}
+
+
+	.container {
+		margin: 2em auto;
+		position: relative;
+		padding: 1em;
+		background: white;
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+
+	.container::before, .container::after {
+	content: "";
+	position: absolute;
+	z-index: -2;
+	}
+	
+	.container::before {
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	-moz-border-radius: 10px / 100px;
+	border-radius: 10px / 100px;
+	}
+	
+	header.container{
+		background: whiteSmoke;
+	}
+
+	header img.photo {
+		display:block;
+	}
+
+	span.paperclip{
+		display:block;
+		position:absolute;
+		height:120px;
+		width:60px;
+		background:transparent url(../images/Paperclip.png) no-repeat top center;
+		right: 110px;
+		top: -29px;
+		z-index: 1000;
+	}
+
+	.vcard img, .vcard .email{
+		display:block;
+	}
+
+	section.education {
+		float:right;
+		text-align:right;
+	}
+
+	#skills {
+		display:none;
+	}
+
+	html.js #experience_container {
+		padding:1em;
+	}
+
+
+	.position {
+	    position:relative;
+	    padding:1em; 
+	    margin:2em 10px 2em; 
+	    background:#fff;
+	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+	       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+
+	.position:before,
+	.position:after {
+	    content:"";
+	    position:absolute; 
+	    z-index:-2;
+	}
+}
+
+
+@media print{
+	* { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+	a[href]:after { content: " (" attr(href) ")"; }
+	abbr[title]:after { content: " (" attr(title) ")"; }
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	thead { display: table-header-group; } 
+	tr, img { page-break-inside: avoid; }
+	img { max-width: 100% !important; }
+	@page { margin: 0.5cm; }
+	p, h2, h3 { orphans: 3; widows: 3; }
+	h2, h3 { page-break-after: avoid; }
+	header h1{
+		margin-bottom:20px;
+	}
+	
+	#pdf_download { display:none;}
+	
+	html.js #skills,html #skills {
+		display:none;
+	}
+	html.js #experience, html #experience {
+		width: 100%;
+	}
+	
+	span.paperclip,img.photo, .no-print {
+		display:none;
+	}
+	a,a:visited {
+		text-decoration:none;
+	}
+}
+
