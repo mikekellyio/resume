@@ -353,5 +353,11 @@ html.js #experience {
 	a,a:visited {
 		text-decoration:none;
 	}
+	header {
+   	page-break-after: avoid;
+	}
+	section {
+   	page-break-inside: avoid;
+	}
 }
 
