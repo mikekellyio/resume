@@ -5,7 +5,7 @@ export default {
   pdf: "Michael_Kelly_Resume.pdf",
   title: "Web Front End/Ruby Developer",
   bio:
-    "I am an Expert Software Engineer with two decades of experience designing and building software in the intelligence community. I love to make web applications that are polished, standards based, and user friendly. While I prefer to work on the front end, my Computer Science background lends well when I need to get my hands dirty on the back end of systems. These skills have played a large part in the launches of 7 major web applications, three of them flagship level.",
+    "I am an Expert Software Engineer with two decades of experience designing and building software in the intelligence community. I love to make web applications that are polished, standards based, and user friendly. While I prefer to work on the front end, my Computer Science background lends well when I need to get my hands dirty on the back end of systems. These skills have played a large part in the launches of 8 major web applications, four of them flagship level.",
   email: "michael.i.kelly@gmail.com",
   city: "Ashburn",
   state: "VA",
@@ -20,10 +20,10 @@ export default {
       startYear: "2019",
       endYear: null,
       highlights: [
-        "UI Team Lead responsible for modernizing legacy Angular/Node password management application using React.",
-        "Architected repeatable deploy process using Docker and AWS.",
+        "Front End Team Lead for a flagship web application delivering timely information for worldwide customers using Angular 8. Responsible for mentoring junior developers on the team in best practices. (2020-present)",
+        "UI Team Lead responsible for modernizing legacy Angular/Node password management application using React. Architected repeatable deploy process using Docker and AWS. (2019-2020)",
       ],
-      skills: ["HTML", "CSS", "React JS", "NodeJS", "Git", "Docker", "AWS"],
+      skills: ["HTML", "CSS", "React JS", "Angular 8", "NodeJS", "Git", "Docker", "AWS"],
     },
     {
       title: "Expert Software Engineer",
