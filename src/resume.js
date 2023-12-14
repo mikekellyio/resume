@@ -20,11 +20,12 @@ export default {
       startYear: "2019",
       endYear: null,
       highlights: [
-        "Developer Lead for a web application providing search capabilities for a large datastore using Angular 11. Responsible for mentoring junior team members and ensuring best practices are followed. (2021-present)",
+        "UI Developer Lead for next generation flagship web application for entitlement management using Next.js and React. Responsible for UX design, architecting CI/CD automation, and guiding team members in best practices. (2022-present)",
+        "Developer Lead for a web application providing search capabilities for a large datastore using Angular 11. Responsible for mentoring junior team members and ensuring best practices are followed. (2021-2022)",
         "Front End Team Lead for a flagship web application delivering timely information for worldwide customers using Angular 8. Responsible for mentoring junior developers on the team in best practices. (2020-2021)",
         "UI Team Lead responsible for modernizing legacy Angular/Node password management application using React. Architected repeatable deploy process using Docker and AWS. (2019-2020)",
       ],
-      skills: ["HTML", "CSS", "React JS", "Angular 8,11", "NodeJS", "Git", "Docker", "AWS"],
+      skills: ["HTML", "CSS", "Next.js", "React JS", "Angular 8,11", "NodeJS", "Git", "Docker", "AWS"],
     },
     {
       title: "Expert Software Engineer",
