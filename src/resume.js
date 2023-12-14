@@ -5,7 +5,7 @@ export default {
   pdf: "Michael_Kelly_Resume.pdf",
   title: "Web Front End/Ruby Developer",
   bio:
-    "I am an Expert Software Engineer with two decades of experience designing and building software in the intelligence community. I love to make web applications that are polished, standards based, and user friendly. While I prefer to work on the front end, my Computer Science background lends well when I need to get my hands dirty on the back end of systems. These skills have played a large part in the launches of 8 major web applications, four of them flagship level.",
+    "I am an Subject Matter Expert Software Engineer with over two decades of experience designing and building software in the intelligence community. I love to make web applications that are polished, standards based, and user friendly. While I prefer to work on the front end, my Computer Science background lends well when I need to get my hands dirty on the back end of systems. These skills have played a large part in the launches of 8 major web applications, four of them flagship level.",
   email: "michael.i.kelly@gmail.com",
   city: "Ashburn",
   state: "VA",
