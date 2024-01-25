@@ -36,7 +36,7 @@ export default {
       endYear: "2019",
       highlights: [
         "Web UI Team Lead responsible for growing junior developers on team.",
-        "Designed, Architected, and built Single Page Application (SPA) for User Communications (both text based and real-time voice with historical playback), and User Management of system",
+        "Designed, Architected, and built Single Page Application (SPA) for User Communications (both text based and real-time voice with historical playback of each voice message), and User Management of system",
         "Architected and built SPA for management and interactive use (via VNC within a web page) of Android Mobile Device Emulators running in a cloud-based environment.",
         "Researched and developed automatic build pipeline using Docker and Gitlab for release management.",
       ],
