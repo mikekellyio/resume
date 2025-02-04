@@ -11,7 +11,7 @@ export default {
   city: "Ashburn",
   state: "VA",
   phoneNumber: "(703)665-4110",
-  clearance: "Active TS/SCI Clearance with Full Scope Polygraph",
+  clearance: "Active TS/SCI Clearance with Polygraph",
   education: "B.S, Computer Science, James Madison University (2002)",
   jobs: [
     {
