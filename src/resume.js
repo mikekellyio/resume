@@ -6,7 +6,9 @@ export default {
   pdf: "Michael_Kelly_Resume.pdf",
   title: "Web Front End/Ruby Developer",
   bio:
-    "I am an Subject Matter Expert Software Engineer with over two decades of experience designing and building software in the intelligence community. I love to make web applications that are polished, standards based, and user friendly. While I prefer to work on the front end, my Computer Science background lends well when I need to get my hands dirty on the back end of systems. These skills have played a large part in the launches of 8 major web applications, four of them flagship level.",
+    "Innovative and results-driven Software Engineer with over 20 years of experience designing and developing high-performance web applications, primarily in the intelligence community. Proven track record of leading front-end teams, modernizing legacy systems, and architecting flagship applications using React, Next.js, Angular, and Ruby on Rails. Adept at mentoring developers, implementing best practices, and optimizing workflows for efficiency and scalability.",
+  bioConclusion: "Passionate about user-centric design, cutting-edge web technologies, and fostering high-performing development teams.",
+  keyAchievements: ["Led the development of 8+ major web applications, 4 of them at a flagship level.", "Architected and automated CI/CD pipelines, improving deployment efficiency.", "Modernized a critical Angular/Node system to React, enhancing performance and usability.", "Developed a widely recognized web application, featured on Lifehacker and CNET."],
   email: "michael.i.kelly@gmail.com",
   city: "Ashburn",
   state: "VA",
