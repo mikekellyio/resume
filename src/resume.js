@@ -21,14 +21,14 @@ export default {
       startYear: "2019",
       endYear: null,
       highlights: [
-        "Researched and developed automated improvements to internal recruiting systems. Created internal job search application for use by recruiters and company internal transfers. Integrated with AI to streamline recruiting prospect job matching.",
+        "Led development of an AI-powered, multi-tenant talent management platform built with Next.js 16, TypeScript, and PostgreSQL, enabling organizations to intelligently match candidates to job postings. Architected a two-stage matching engine combining OpenAI vector embeddings with GPT-5 semantic reranking, backed by an event-driven ETL pipeline across 7 AWS Lambda functions for automated resume ingestion and profile extraction. Implemented organization-scoped data isolation, role-based access control, and Microsoft Azure AD authentication to support a secure, multi-organization SaaS architecture.",
         "Full Stack Developer on graph and data correlation web application using big data and developed with Vite and React for the front end. Developed Python Lambda functions and championed scalable asynchonous search features.",
         "UI Developer Lead for next generation flagship web application for entitlement management using Next.js and React. Responsible for UX design, architecting CI/CD automation, and guiding team members in best practices. (2022-present)",
         "Developer Lead for a web application providing search capabilities for a large datastore using Angular 11. Responsible for mentoring junior team members and ensuring best practices are followed. (2021-2022)",
         "Front End Team Lead for a flagship web application delivering timely information for worldwide customers using Angular 8. Responsible for mentoring junior developers on the team in best practices. (2020-2021)",
         "UI Team Lead responsible for modernizing legacy Angular/Node password management application using React. Architected repeatable deploy process using Docker and AWS. (2019-2020)",
       ],
-      skills: ["HTML", "CSS", "Next.js", "Vite", "React JS", "Angular 8,11", "NodeJS", "Python", "Git", "Docker", "AWS"],
+      skills: ["HTML", "CSS", "Next.js", "Vite", "React JS", "Angular 8,11", "NodeJS", "Python", "TypeScript", "PostgreSQL", "Prisma", "OpenAI", "Git", "Docker", "AWS"],
     },
     {
       title: "Expert Software Engineer",
